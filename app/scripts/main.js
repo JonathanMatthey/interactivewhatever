@@ -137,14 +137,14 @@ $(document).ready(function(){
     playThreeWaveAnimation('down');
 
     // $("#main").addClass('bottom-wave-anim');
-    $.History.go(projectUrl);
+    // $.History.go(projectUrl);
   });
 
   $(".prev-link, .next-link").click(function(evt){
     evt.preventDefault();
     var projectUrl = $(evt.currentTarget).attr('href');
     projectUrl = projectUrl.replace('/#/caralho','');
-    $.History.go(projectUrl);
+    // $.History.go(projectUrl);
   });
 
   $("#plus-menu a").click(function(evt){
@@ -245,20 +245,6 @@ $(document).ready(function(){
   });
 
   windowWidth = 1024;
-
-  // $(".project-list a").mousemove(function(evt){
-  //   var currentPosX = evt.pageX;
-  //   var currentPosY = evt.pageY;
-  //   if(currentPosX < windowWidth/2){
-
-  //   } else {
-
-  //   }
-  //   $(evt.currentTarget).find('.project-rollover-wrapper > img').first().css("left", 1*(currentPosX/windowWidth)*30+15+"px");
-  //   $(evt.currentTarget).find('.project-rollover-wrapper > img').last().css("left", -1*(currentPosX/windowWidth)*30+155+"px");
-  // });
-
-
 
 });
 // END DOC READY

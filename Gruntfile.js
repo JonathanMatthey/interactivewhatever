@@ -265,7 +265,8 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,png,txt}',
                         '.htaccess',
-                        'images/{,*/}*.{webp,gif}',
+                        'images/{,*/}*.{png,jpg,jpeg,gif,webp}',
+                        'images/{,*/}{,*/}*.{png,jpg,jpeg,gif,webp}',
                         'styles/fonts/*'
                     ]
                 }, {
@@ -286,6 +287,13 @@ module.exports = function (grunt) {
             test: [
                 'coffee',
                 'compass'
+            ],
+            devdist: [
+                'coffee',
+                'compass:dist',
+                'imagemin',
+                'svgmin',
+                'htmlmin'
             ],
             dist: [
                 'coffee',
@@ -316,6 +324,17 @@ module.exports = function (grunt) {
         'concurrent:test',
         'connect:test',
         'mocha'
+    ]);
+
+    grunt.registerTask('devbuild', [
+        'clean:dist',
+        'useminPrepare',
+        'concurrent:devdist',
+        'cssmin',
+        'concat',
+        'uglify',
+        'copy',
+        'usemin'
     ]);
 
     grunt.registerTask('build', [
