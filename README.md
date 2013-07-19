@@ -1,4 +1,4 @@
-# Augusto Paiva's portfolio built on Yeoman
+# Augusto Paiva's Portfolio on Yeoman
 
 run using:
 
