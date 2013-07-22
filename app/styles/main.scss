@@ -12,11 +12,12 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
     color: white;
     font-family:"Adobe Caslon Pro", serif;
     height:100%;
-
   }
+
   html, .content{
     height:100%;
   }
+
   article{
     height:100%;
   }
@@ -41,6 +42,9 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
     }
   }
 
+  article.project{
+    height:auto;
+  }
 
   footer{
     height:150px;
@@ -51,9 +55,9 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
     z-index: 99;
 
     .copyright{
-      width:480px;
+      width:483px;
       float:left;
-      padding:40px 50px 0 44px;
+      padding:40px 30px 0 44px;
       .logo{
         width:180px;
         background-size: 180px;
@@ -91,6 +95,48 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
         a:first-child{
           margin-left:0;
+        }
+      }
+    }
+
+    &.project{
+      position: relative ;
+      height:auto;
+    }
+
+    .next-prev{
+      background-color:#1c1c1c;
+      height:900px;
+      float:left;
+      width:100%;
+
+      > div:first-child{
+        margin-top:155px;
+      }
+      > div{
+        padding-left:40px;
+        clear:both;
+
+        .label{
+          color:#444;
+          font-size:30px;
+          line-height: 30px;
+          width:90%;
+          display: block;
+          background-color:transparent;
+          margin-bottom:20px;
+        }
+        a{
+          text-decoration: none;
+          font-weight:bold;
+          color:#fff;
+          font-size:190px;
+          line-height:210px;
+          background-color:transparent;
+          height:100px;
+          &:hover{
+            color:#71f7c3;
+          }
         }
       }
     }
@@ -360,20 +406,24 @@ ul{
    ABOUT PAGE
 ============================================================================= */
 
+.about.content{
+  overflow: hidden;
+}
+
 #about-page{
-  padding-left:50px;
+  padding-left:45px;
   background-color:#1c1c1c;
   position: relative;
   z-index: 5;
   width:100%;
   background-repeat: no-repeat;
-  padding-top:160px;
+  padding-top:10%;
   overflow: hidden;
   height:100%;
 
   .bg{
-    background: #1c1c1c url(../images/augusto-paiva-bg.jpg)  no-repeat fixed right;
-    background-size: auto 100% ;
+    background: #1c1c1c url(../images/augusto-paiva-bg.jpg)  no-repeat fixed right 70px;
+    background-size: auto 81% ;
     position: absolute;
     top:0;
     left:0;
@@ -390,13 +440,15 @@ ul{
   }
 
   p{
-    width:870px;
+    width:880px;
+    line-height: 26px;
+    margin-bottom:25px;
   }
 
   p.strong{
     color:white;
-    margin-top:50px;
-    margin-bottom:40px;
+    margin-top:65px;
+    margin-bottom:69px;
   }
 
   .connect-links{
@@ -458,15 +510,15 @@ ul{
     font-family:"Adobe Caslon Pro";
     font-size:22px;
     margin:auto 15px;
-    float:right;
+    position: absolute;
     z-index: 10!important;
     text-decoration: none;
 
-    .about{
+    &.about{
       right:120px;
     }
 
-    .all-work{
+    &.all-work{
       right:0px;
     }
   }
@@ -541,6 +593,7 @@ ul{
   background-color:white;
   width:100%;
   text-align: left;
+  padding-top:50px;
 
 }
 
@@ -549,7 +602,7 @@ ul{
   color:#1c1c1c;
   padding-top:70px;
   margin-left:50px;
-  padding-bottom:0;
+  padding-bottom:25px;
   margin-bottom:0;
   width:50%;
 }
@@ -570,13 +623,13 @@ ul{
   color: #1c1c1c;
   font-family: helvetica;
   margin-left: 60px;
-  margin-top: 12px;
+  margin-top: 0px;
   font-size: 13px;
 }
 
 .project-details .social-btns{
   width:150px;
-  margin-top:12px;
+  margin-top:1px;
   float:left;
 }
 
@@ -611,11 +664,12 @@ ul{
   -moz-transition: all 300ms ease-out;
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
-  margin-bottom:20px;
+  margin-bottom:0px;
 }
 
 .project-details.expanded p.more{
-  height:50px;
+  height:60px;
+  margin-bottom:10px;
 }
 
 .rollover-imgs{
@@ -958,7 +1012,7 @@ ul{
   color: #1c1c1c;
   font-weight: bold;
   position: absolute;
-  top:90px;
+  top:120px;
   right:40px;
 }
 
@@ -1131,21 +1185,115 @@ ul{
 
 @media all and (max-width: 1023px){
 
+  footer{
+    .connect{
+      padding:10px 0px 40px 40px;
+    }
+    .next-prev{
+      height:455px;
+
+      > div:first-child{
+        margin-top:100px;
+        margin-bottom:20px;
+      }
+      > div{
+        .label{
+          font-size:24px;
+          line-height: 24px;
+          margin-bottom:20px;
+        }
+        a{
+          font-size:60px;
+          line-height:80px;
+          height:100px;
+        }
+      }
+    }
+  }
+
   #home-page{
     overflow: scroll;
     position: relative;
     height:100%;
   }
 
+  #about-page{
+    padding-top:15%;
+    p{
+      font-size:15px;
+      line-height: 18px;
+      width:70%;
+    }
+    p.strong{
+      margin: 30px 0 30px 0 ;
+    }
+    .connect-links{
+      font-size:18px;
+      a{
+        font-size:18px;
+      }
+    }
+    .bg{
+      background-position: 100% 70px;
+      background-size:auto 80%;
+    }
+  }
+
 }
 
 @media all and (min-width: 1024px) and (max-width: 1279px){
+
+  footer .next-prev{
+    height:550px;
+
+    > div:first-child{
+      margin-top:100px;
+      margin-bottom:20px;
+    }
+    > div{
+      .label{
+        font-size:24px;
+        line-height: 24px;
+        margin-bottom:20px;
+      }
+      a{
+        font-size:80px;
+        line-height:100px;
+        height:100px;
+      }
+    }
+  }
+
+  #about-page{
+    padding-top:11%;
+    p{
+      font-size:15px;
+      line-height: 18px;
+      width:710px;
+    }
+    p.strong{
+      margin: 30px 0 30px 0 ;
+    }
+    .connect-links{
+      font-size:18px;
+      a{
+        font-size:18px;
+      }
+    }
+    .bg{
+      background-position: 140% 70px;
+      background-size:auto 75%;
+    }
+  }
+
   footer {
+    height:130px;
+
     .copyright{
-      width:483px;
-      padding-right:30px;
+      padding-top:20px;
     }
     .connect{
+      padding-top:20px;
       width:400px;
     }
   }
@@ -1220,8 +1368,48 @@ ul{
 
 @media all and (min-width: 1280px) and (max-width: 1439px){
 
-  footer .copyright{
+  footer .next-prev{
+    height:550px;
+
+    > div:first-child{
+      margin-top:100px;
+      margin-bottom:20px;
+    }
+    > div{
+      .label{
+        font-size:24px;
+        line-height: 24px;
+        margin-bottom:20px;
+      }
+      a{
+        font-size:100px;
+        line-height:120px;
+        height:100px;
+      }
+    }
   }
+
+  #about-page{
+    padding-top:8%;
+    p{
+      font-size:16px;
+      line-height: 20px;
+      width:810px;
+    }
+    p.strong{
+      margin: 30px 0 40px 0 ;
+    }
+    .connect-links{
+      font-size:24px;
+      a{
+        font-size:24px;
+      }
+    }
+    .bg{
+      background-size:auto 70%;
+    }
+  }
+
 
   .project-list{
     width:435px;
@@ -1291,10 +1479,35 @@ ul{
 }
 
 @media all and (min-width: 1440px) and (max-width: 1679px){
-  footer .copyright{
-    width:483px;
-    padding-right:30px;
+
+  #about-page{
+    padding-top:9%;
     p{
+      font-size:18px;
+      line-height: 22px;
+    }
+    p.strong{
+      margin: 30px 0 40px 0 ;
+    }
+  }
+
+  footer .next-prev{
+    height:650px;
+
+    > div:first-child{
+      margin-top:100px;
+    }
+    > div{
+      .label{
+        font-size:30px;
+        line-height: 30px;
+        margin-bottom:20px;
+      }
+      a{
+        font-size:140px;
+        line-height:160px;
+        height:100px;
+      }
     }
   }
 
@@ -1325,6 +1538,10 @@ ul{
 }
 
 @media all and (min-width: 1680px) and (max-width: 1909px){
+
+  #about-page{
+    padding-top:7%;
+  }
 
   .project-list{
     width:720px;
@@ -1359,7 +1576,9 @@ ul{
 
   .project-list{
     width:690px;
+
     li{
+
       width:690px;
 
       a{

@@ -147,25 +147,25 @@ $(document).ready(function(){
     // $.History.go(projectUrl);
   });
 
-  $("#plus-menu a").click(function(evt){
-    evt.preventDefault();
+  // $("#plus-menu a").click(function(evt){
+  //   evt.preventDefault();
 
-    if ( $(document).scrollTop() > 10 ){
-      $('html, body').animate({
-        scrollTop: 0
-      }, 1000, function(){
-        playThreeWaveAnimation('up');
-      });
-    }
-    else {
-      if ($("#main.bottom-section-view").length > 0){
-        playThreeWaveAnimation('up');
-      }
-      else{
-        slideUp();
-      }
-    }
-  });
+  //   if ( $(document).scrollTop() > 10 ){
+  //     $('html, body').animate({
+  //       scrollTop: 0
+  //     }, 1000, function(){
+  //       playThreeWaveAnimation('up');
+  //     });
+  //   }
+  //   else {
+  //     if ($("#main.bottom-section-view").length > 0){
+  //       playThreeWaveAnimation('up');
+  //     }
+  //     else{
+  //       slideUp();
+  //     }
+  //   }
+  // });
 
   // function playThreeWaveAnimation(){
   //   // at bottom of portfolio - wave up !
@@ -245,6 +245,9 @@ $(document).ready(function(){
   });
 
   windowWidth = 1024;
+
+  bindProjectPageEvents();
+
 
 });
 // END DOC READY
