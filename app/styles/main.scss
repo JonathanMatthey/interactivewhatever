@@ -7,269 +7,269 @@ $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
    Base styles
    ========================================================================== */
 
-body{
-  background-color:#1c1c1c;
-  color: white;
-  font-family:"Adobe Caslon Pro", serif;
-  height:100%;
+   body{
+    background-color:#1c1c1c;
+    color: white;
+    font-family:"Adobe Caslon Pro", serif;
+    height:100%;
 
-}
-html, .content{
-  height:100%;
-}
-article{
-  height:100%;
-}
+  }
+  html, .content{
+    height:100%;
+  }
+  article{
+    height:100%;
+  }
 
 /* ==========================================================================
    Layout
    ========================================================================== */
 
-header{
-  height: 70px;
-  background-color: #111;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 9;
+   header{
+    height: 70px;
+    background-color: #111;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
 
-  h1{
-    margin-left:42px;
-    width:220px;
-    margin-top:12px;
-    float:left;
-  }
-}
-
-
-footer{
-  height:150px;
-  width:100%;
-  background-color:#111;
-  position: fixed;
-  bottom: 0;
-  z-index: 99;
-
-  .copyright{
-    width:480px;
-    float:left;
-    padding:40px 50px 0 44px;
-    .logo{
-      width:180px;
-      background-size: 180px;
-      background-repeat: no-repeat;
-      height:30px;
-    }
-    p{
-      font-size:13px;
-      font-family: helvetica;
-      font-weight: normal;
-      color: #333;
-      margin:20px 0;
-      line-height: 16px;
+    h1{
+      margin-left:42px;
+      width:220px;
+      margin-top:12px;
+      float:left;
     }
   }
 
-  .connect{
-    padding:40px 0px 0 0px;
-    width:480px;
-    float:left;
-    h3{
-      font-size:18px;
-      font-weight: normal;
-      margin:0;
-      padding:0;
-      margin-bottom:10px;
-    }
-    .connect-links {
-      a{
-        font-family: helvetica;
+
+  footer{
+    height:150px;
+    width:100%;
+    background-color:#111;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+
+    .copyright{
+      width:480px;
+      float:left;
+      padding:40px 50px 0 44px;
+      .logo{
+        width:180px;
+        background-size: 180px;
+        background-repeat: no-repeat;
+        height:30px;
+      }
+      p{
         font-size:13px;
-        margin-left:5px;
-        margin-right:5px;
+        font-family: helvetica;
+        font-weight: normal;
+        color: #333;
+        margin:20px 0;
+        line-height: 16px;
       }
+    }
 
-      a:first-child{
-        margin-left:0;
+    .connect{
+      padding:40px 0px 0 0px;
+      width:480px;
+      float:left;
+      h3{
+        font-size:18px;
+        font-weight: normal;
+        margin:0;
+        padding:0;
+        margin-bottom:5px;
+      }
+      .connect-links {
+        a{
+          font-family: helvetica;
+          font-size:13px;
+          margin-left:5px;
+          margin-right:5px;
+        }
+
+        a:first-child{
+          margin-left:0;
+        }
       }
     }
   }
-}
 
 /* ==========================================================================
    Navigation
    ========================================================================== */
 
-.next-link,
-.prev-link{
-  position: fixed;
-  left:0;
-  margin-top:-60px;
-  width:200px;
-  height:123px;
-  display: block;
-  top:50%;
-  z-index: 29;
-  opacity: 1;
-}
-.next-link{
-  right:0;
-  left:auto;
-}
-.prev-link .preview,
-.next-link .preview{
-  width:200px;
-  height:123px;
-  opacity: 0;
-  -webkit-transition: opacity 100ms linear;
-  -moz-transition: opacity 100ms linear;
-  -o-transition: opacity 100ms linear;
-  transition: opacity 100ms linear;
-}
+   .next-link,
+   .prev-link{
+    position: fixed;
+    left:0;
+    margin-top:-60px;
+    width:200px;
+    height:123px;
+    display: block;
+    top:50%;
+    z-index: 29;
+    opacity: 1;
+  }
+  .next-link{
+    right:0;
+    left:auto;
+  }
+  .prev-link .preview,
+  .next-link .preview{
+    width:200px;
+    height:123px;
+    opacity: 0;
+    -webkit-transition: opacity 100ms linear;
+    -moz-transition: opacity 100ms linear;
+    -o-transition: opacity 100ms linear;
+    transition: opacity 100ms linear;
+  }
 
-.next-text, .prev-text {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.8);
-  width: 74px;
-  text-align: center;
-  font-size: 12px;
-  font-family: "Helvetica Neue",Helvetica;
-  text-transform: capitalize;
-  padding: 9px;
-  margin-left: 54px;
-  margin-bottom: 1px;
-  line-height: 16px;
-}
+  .next-text, .prev-text {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    width: 74px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Helvetica Neue",Helvetica;
+    text-transform: capitalize;
+    padding: 9px;
+    margin-left: 54px;
+    margin-bottom: 1px;
+    line-height: 16px;
+  }
 
-.prev-text {
-  width: 95px;
-  margin-left: auto;
-  margin-right: 32px;
-}
+  .prev-text {
+    width: 95px;
+    margin-left: auto;
+    margin-right: 32px;
+  }
 
-.next-text{
-  left:0;
-}
-.prev-text{
-  right:0;
-}
+  .next-text{
+    left:0;
+  }
+  .prev-text{
+    right:0;
+  }
 
-.next-link:hover .preview,
-.prev-link:hover .preview{
-  opacity: 1;
-}
-.next-link:hover .arrow,
-.prev-link:hover .arrow{
-  opacity: 0.8;
-}
+  .next-link:hover .preview,
+  .prev-link:hover .preview{
+    opacity: 1;
+  }
+  .next-link:hover .arrow,
+  .prev-link:hover .arrow{
+    opacity: 0.8;
+  }
 
-.next-link .arrow,
-.prev-link .arrow{
-  width:55px;
-  height:34px;
-  background-image: url(../images/left-arrow.jpg);
-  display: block;
-  position: absolute;
-  bottom:0;
-  left:0;
-  opacity: 0.2;
-}
-.next-link .arrow{
-  right:0;
-  left:auto;
-  -webkit-transform: rotate(180deg);
-}
+  .next-link .arrow,
+  .prev-link .arrow{
+    width:55px;
+    height:34px;
+    background-image: url(../images/left-arrow.jpg);
+    display: block;
+    position: absolute;
+    bottom:0;
+    left:0;
+    opacity: 0.2;
+  }
+  .next-link .arrow{
+    right:0;
+    left:auto;
+    -webkit-transform: rotate(180deg);
+  }
 
 /* ==========================================================================
    MODULE STYLES
    ========================================================================== */
 
-#main{
-  position: relative;
-  z-index: 4;
-  opacity: 1;
-}
+   #main{
+    position: relative;
+    z-index: 4;
+    opacity: 1;
+  }
 
-#top-section{
-  margin-top:0px;
-  width: 100%;
-}
+  #top-section{
+    margin-top:0px;
+    width: 100%;
+  }
 
-#bottom-section{
-  width:100%;
-  background-color:white;
-  z-index: 555;
-}
+  #bottom-section{
+    width:100%;
+    background-color:white;
+    z-index: 555;
+  }
 
-.wave{
-  position: absolute;
-}
+  .wave{
+    position: absolute;
+  }
 
-#wave1{
-  background-color:#1d1d1d;
-  z-index: 552;
-}
-#wave2{
-  z-index: 551;
-}
-#wave3{
-  background-color: #1d1d1d;
-  z-index: 550;
-}
+  #wave1{
+    background-color:#1d1d1d;
+    z-index: 552;
+  }
+  #wave2{
+    z-index: 551;
+  }
+  #wave3{
+    background-color: #1d1d1d;
+    z-index: 550;
+  }
 
-.wave .pattern{
-  background-color:#31b984;
-  width:100%;
-  height:100%;
-  background-image: url(../images/transition_01.gif);
-}
+  .wave .pattern{
+    background-color:#31b984;
+    width:100%;
+    height:100%;
+    background-image: url(../images/transition_01.gif);
+  }
 
-#wave1,#wave2,#wave3{
-  width:100%;
-  position: absolute;
-}
+  #wave1,#wave2,#wave3{
+    width:100%;
+    position: absolute;
+  }
 
-#main{
-}
+  #main{
+  }
 
-#main.home-view{
-  opacity: 1;
-}
+  #main.home-view{
+    opacity: 1;
+  }
 
-#main.about-view #top-section{
-  margin-top:0px!important;
-  opacity: 1;
-}
+  #main.about-view #top-section{
+    margin-top:0px!important;
+    opacity: 1;
+  }
 
-#main.about-slide-transition #top-section{
-  -webkit-transition: margin-top 300ms ease-out;
-  -moz-transition: margin-top 300ms ease-out;
-  -o-transition: margin-top 300ms ease-out;
-  transition: margin-top 300ms ease-out;
-}
+  #main.about-slide-transition #top-section{
+    -webkit-transition: margin-top 300ms ease-out;
+    -moz-transition: margin-top 300ms ease-out;
+    -o-transition: margin-top 300ms ease-out;
+    transition: margin-top 300ms ease-out;
+  }
 
-#main.about-view .bg{
-  opacity: 1;
-}
+  #main.about-view .bg{
+    opacity: 1;
+  }
 
-#main.about-slide-transition .bg{
-  -webkit-transition: opacity 2s ease-out 600ms;
-  -moz-transition: opacity 2s ease-out 600ms;
-  -o-transition: opacity 2s ease-out 600ms;
-  transition: opacity 2s ease-out 600ms;
-}
+  #main.about-slide-transition .bg{
+    -webkit-transition: opacity 2s ease-out 600ms;
+    -moz-transition: opacity 2s ease-out 600ms;
+    -o-transition: opacity 2s ease-out 600ms;
+    transition: opacity 2s ease-out 600ms;
+  }
 
-#main.home-view .bg{
-  opacity: 0;
-  -webkit-transition: opacity 100ms ease-out ;
-  -moz-transition: opacity 100ms ease-out ;
-  -o-transition: opacity 100ms ease-out ;
-  transition: opacity 100ms ease-out ;
-}
+  #main.home-view .bg{
+    opacity: 0;
+    -webkit-transition: opacity 100ms ease-out ;
+    -moz-transition: opacity 100ms ease-out ;
+    -o-transition: opacity 100ms ease-out ;
+    transition: opacity 100ms ease-out ;
+  }
 
 
-#main.project-view{
+  #main.project-view{
   /*margin-top:-2000px;*/
 }
 
@@ -358,7 +358,7 @@ ul{
 
 /* ==========================================================================
    ABOUT PAGE
-   ========================================================================== */
+============================================================================= */
 
 #about-page{
   padding-left:50px;
@@ -630,12 +630,14 @@ ul{
     position: absolute;
     width:100%;
     height:100%;
-    > img{
+    img{
       position: absolute;
       opacity: 0;
+      max-height:100%;
+      max-width:100%;
     }
 
-    &.active > img{
+    &.active img{
       opacity: 1;
     }
   }
@@ -672,256 +674,254 @@ ul{
       top:100px;
     }
   }
+
+  .nike-store{
+    width:800px;
+    height:800px;
+    right:20%;
+    top:0%;
+
+    > img:nth-child(1){
+      z-index: 3;
+      left:0px;
+      top:00px;
+    }
+
+    > img:nth-child(2){
+      z-index: 3;
+      left:-140px;
+      top:200px;
+    }
+
+    > img:nth-child(3){
+      z-index: 3;
+      left:-20px;
+      top:750px;
+    }
+
+    > img:nth-child(4){
+      z-index: 3;
+      left:-5px;
+      top:100px;
+    }
+  }
+
+
+  .leica-photo-contest{
+    width:800px;
+    height:800px;
+    right:00%;
+    top:0%;
+
+    > img:nth-child(1){
+      background-image: url(../images/rollover-cutouts/leica/leica_01.jpg);
+      left: -100px;
+      top: 400px;
+    }
+
+    > img:nth-child(2){
+      background-image: url(../images/rollover-cutouts/leica/leica_02.jpg);
+      right: 200px;
+      top: 60px;
+    }
+  }
+
+  .the-love-project{
+    width:1200px;
+    height:800px;
+    right:00%;
+    top:0%;
+
+    > img:nth-child(1){
+      right: 0px;
+      top: 0px;
+      background-position: top right;
+    }
+  }
+
+  .honda-access{
+    width:1300px;
+    height:800px;
+    right:0%;
+    top:5%;
+
+    > img:nth-child(1){
+      left: 0px;
+      top: 0px;
+    }
+
+    > img:nth-child(2){
+      right: 0px;
+      top: 0px;
+    }
+  }
+
+  .honda-com-br{
+    width:1200px;
+    height:800px;
+    right:0%;
+    top:0%;
+
+    > img:nth-child(1){
+      right:0;
+      top:0;
+    }
+
+    > img:nth-child(2){
+      right:0px;
+      top:0px;
+    }
+  }
+
+  .volcom-com{
+    width:1200px;
+    height:800px;
+    right:0%;
+    top:0%;
+
+    > img:nth-child(1){
+      left:-100px;
+      top:140px;
+    }
+
+    > img:nth-child(2){
+      left:150px;
+      top:150px;
+    }
+
+    > img:nth-child(3){
+      left:100px;
+      top:490px;
+    }
+
+    > img:nth-child(4){
+      left:250px;
+      top:500px;
+    }
+  }
+
+  .nike-snowboarding{
+    width:800px;
+    height:800px;
+    left:7%;
+    top:0%;
+
+    > img:nth-child(1){
+      left:280px;
+      top:50px;
+    }
+
+    > img:nth-child(2){
+      left:0px;
+      top:000px;
+    }
+  }
+
+  .nike-skateboarding > img:nth-child(1){
+    width:900px;
+    height:950px;
+    left:-2%;
+    top:10%;
+  }
+
+  .lebron-james-raven{
+    width:900px;
+    height:800px;
+    left:0%;
+    top:0%;
+
+    > img:nth-child(1){
+      left:320px;
+      top:200px;
+      z-index: 9;
+    }
+
+    > img:nth-child(2){
+      top:80px;
+      left:500px;
+    }
+
+    > img:nth-child(3){
+      top:150px;
+      right:0;
+    }
+
+    > img:nth-child(4){
+      top:380px;
+      left:180px;
+    }
+
+    > img:nth-child(5){
+      top:10px;
+      left:120px;
+    }
+
+    > img:nth-child(6){
+      top:500px;
+      left:350px;
+    }
+  }
+
+  .nike-b-access{
+    width:800px;
+    height:800px;
+    left:0%;
+    top:0%;
+
+    > img:nth-child(1){
+      top:150px;
+      left:100px;
+    }
+
+    > img:nth-child(2){
+      top:300px;
+      left:80px;
+
+    }
+  }
+
+  .skol-com-br{
+    width:800px;
+    height:800px;
+    left:0%;
+    top:100px;
+
+    > img:nth-child(1){
+    }
+  }
+
+  .nixon-blog{
+    width:800px;
+    height:800px;
+    left:100px;
+    top:100px;
+
+    > img:nth-child(1){
+      left:10%;
+      top:13%;
+    }
+  }
+
+  .volcom-brain-damage{
+    width:1200px;
+    height:800px;
+    left:0%;
+    top:0%;
+
+    > img:nth-child(1){
+    }
+
+    > img:nth-child(2){
+      left:500px;
+      top:600px;
+    }
+
+    > img:nth-child(3){
+      left:550px;
+      top:100px;
+    }
+  }
 }
-
-.rollover-imgs > .nike-store{
-  width:800px;
-  height:800px;
-  right:20%;
-  top:0%;
-}
-
-.rollover-imgs > .nike-store > img:nth-child(1){
-  z-index: 3;
-  left:0px;
-  top:00px;
-}
-
-.rollover-imgs > .nike-store > img:nth-child(2){
-  z-index: 3;
-  left:-140px;
-  top:200px;
-}
-
-.rollover-imgs > .nike-store > img:nth-child(3){
-  z-index: 3;
-  left:-20px;
-  top:750px;
-}
-
-.rollover-imgs > .nike-store > img:nth-child(4){
-  z-index: 3;
-  left:-5px;
-  top:100px;
-}
-
-.rollover-imgs > .leica-photo-contest{
-  width:800px;
-  height:800px;
-  right:00%;
-  top:0%;
-}
-
-.rollover-imgs > .leica-photo-contest > img:nth-child(1){
-  background-image: url(../images/rollover-cutouts/leica/leica_01.jpg);
-  left: -100px;
-  top: 400px;
-}
-
-.rollover-imgs > .leica-photo-contest > img:nth-child(2){
-  background-image: url(../images/rollover-cutouts/leica/leica_02.jpg);
-  right: 200px;
-  top: 60px;
-}
-
-.rollover-imgs > .the-love-project{
-  width:1200px;
-  height:800px;
-  right:00%;
-  top:0%;
-}
-
-.rollover-imgs > .the-love-project > img:nth-child(1){
-  right: 0px;
-  top: 0px;
-  background-position: top right;
-}
-
-.rollover-imgs > .honda-access{
-  width:1300px;
-  height:800px;
-  right:0%;
-  top:5%;
-}
-
-.rollover-imgs > .honda-access > img:nth-child(1){
-  left: 0px;
-  top: 0px;
-}
-
-.rollover-imgs > .honda-access > img:nth-child(2){
-  right: 0px;
-  top: 0px;
-}
-
-.rollover-imgs > .honda-com-br{
-  width:1200px;
-  height:800px;
-  right:0%;
-  top:0%;
-}
-
-.rollover-imgs > .honda-com-br > img:nth-child(1){
-  right:0;
-  top:0;
-}
-
-.rollover-imgs > .honda-com-br > img:nth-child(2){
-  right:0px;
-  top:0px;
-}
-
-.rollover-imgs > .volcom-com{
-  width:1200px;
-  height:800px;
-  right:0%;
-  top:0%;
-}
-
-.rollover-imgs > .volcom-com > img:nth-child(1){
-  left:-100px;
-  top:140px;
-}
-
-.rollover-imgs > .volcom-com > img:nth-child(2){
-  left:150px;
-  top:150px;
-}
-
-.rollover-imgs > .volcom-com > img:nth-child(3){
-  left:100px;
-  top:490px;
-}
-
-.rollover-imgs > .volcom-com > img:nth-child(4){
-  left:250px;
-  top:500px;
-}
-
-.rollover-imgs > .nike-snowboarding{
-  width:800px;
-  height:800px;
-  left:7%;
-  top:0%;
-}
-
-.rollover-imgs > .nike-snowboarding > img:nth-child(1){
-  left:280px;
-  top:50px;
-}
-
-.rollover-imgs > .nike-snowboarding > img:nth-child(2){
-  left:0px;
-  top:000px;
-}
-
-.rollover-imgs > .nike-skateboarding > img:nth-child(1){
-  width:900px;
-  height:950px;
-  left:-2%;
-  top:10%;
-}
-
-.rollover-imgs > .lebron-james-raven{
-  width:900px;
-  height:800px;
-  left:0%;
-  top:0%;
-}
-
-.rollover-imgs > .lebron-james-raven > img:nth-child(1){
-  left:320px;
-  top:200px;
-  z-index: 9;
-}
-
-.rollover-imgs > .lebron-james-raven > img:nth-child(2){
-  top:80px;
-  left:500px;
-}
-
-.rollover-imgs > .lebron-james-raven > img:nth-child(3){
-  top:150px;
-  right:0;
-}
-
-.rollover-imgs > .lebron-james-raven > img:nth-child(4){
-  top:380px;
-  left:180px;
-}
-
-.rollover-imgs > .lebron-james-raven > img:nth-child(5){
-  top:10px;
-  left:120px;
-}
-
-.rollover-imgs > .lebron-james-raven > img:nth-child(6){
-  top:500px;
-  left:350px;
-}
-
-.rollover-imgs > .nike-b-access{
-  width:800px;
-  height:800px;
-  left:0%;
-  top:0%;
-}
-
-.rollover-imgs > .nike-b-access > img:nth-child(1){
-  top:150px;
-  left:100px;
-}
-
-.rollover-imgs > .nike-b-access > img:nth-child(2){
-  top:300px;
-  left:80px;
-
-}
-
-.rollover-imgs > .skol-com-br{
-  width:800px;
-  height:800px;
-  left:0%;
-  top:100px;
-}
-
-.rollover-imgs > .skol-com-br > img:nth-child(1){
-
-}
-
-.rollover-imgs > .nixon-blog{
-  width:800px;
-  height:800px;
-  left:100px;
-  top:100px;
-}
-
-.rollover-imgs > .nixon-blog > img:nth-child(1){
-  left:10%;
-  top:13%;
-}
-
-.rollover-imgs > .volcom-brain-damage{
-  width:1200px;
-  height:800px;
-  left:0%;
-  top:0%;
-}
-
-.rollover-imgs > .volcom-brain-damage > img:nth-child(1){
-}
-
-.rollover-imgs > .volcom-brain-damage > img:nth-child(2){
-  left:500px;
-  top:600px;
-}
-
-.rollover-imgs > .volcom-brain-damage > img:nth-child(3){
-  left:550px;
-  top:100px;
-
-}
-
 
 /*// TODO TO CLEAN UP THESE */
 
@@ -1128,43 +1128,103 @@ ul{
 //   }
 // }
 
-// @media all and (min-width: 768px) {
 
-// }
+@media all and (max-width: 1023px){
 
-// @media all and (min-width: 1024px) {
-//   .project-list{
-//     width:390px;
-//   }
-//   .project-list li{
-//     width:390px;
-//   }
-//   .project-list.right-col{
-//     width:390px;
-//   }
-//   .project-list.right-col li{
-//     width:390px;
-//   }
-//   .project-list a{
-//     font-size:40px;
-//   }
-//   .project-rollover-img{
-//     /*width:450px;*/
-//   }
-//   .project-rollover-img:nth-child(2){
-//   }
-// }
+  #home-page{
+    overflow: scroll;
+    position: relative;
+    height:100%;
+  }
 
-@media all and (min-width: 1280px) and (max-width: 1439px){
-  footer .copyright{
-    width:483px;
-    padding-right:30px;
-    p{
+}
+
+@media all and (min-width: 1024px) and (max-width: 1279px){
+  footer {
+    .copyright{
+      width:483px;
+      padding-right:30px;
+    }
+    .connect{
+      width:400px;
     }
   }
 
   .project-list{
-      width:435px;
+    width:505px;
+    padding-top:5px;
+
+    li{
+      width:505px;
+      height:55px;
+
+      a{
+        font-size:38px;
+      }
+    }
+
+    &.right-col{
+      width:400px;
+      margin-left:0px;
+      padding-left:10px;
+
+      li{
+        width:820px;
+      }
+    }
+  }
+
+  .rollover-imgs{
+    width:100%;
+    height:100%;
+
+    > .nike-com,
+    .nike-store,
+    .leica-photo-contest,
+    .nike-snowboarding,
+    .nike-b-access,
+    .skol-com-br,
+    .nixon-blog{
+      width:400px;
+      height:400px;
+    }
+    .rollover-imgs > .nike-com > img:nth-child(4){
+      left:-80px
+    }
+
+    .the-love-project,
+    .volcom-com,
+    .honda-com-br,
+    .volcom-brain-damage{
+      width:600px;
+      height:400px;
+    }
+
+    .honda-access{
+      width:650px;
+      height:400px;
+    }
+
+    .nike-skateboarding > img:nth-child(1){
+      width:450px;
+      height:475px;
+    }
+
+    .lebron-james-raven{
+      width:450px;
+      height:400px;
+    }
+  }
+
+}
+
+@media all and (min-width: 1280px) and (max-width: 1439px){
+
+  footer .copyright{
+  }
+
+  .project-list{
+    width:435px;
     padding-top:5px;
 
     li{
@@ -1184,6 +1244,48 @@ ul{
       li{
         width:820px;
       }
+    }
+  }
+
+  .rollover-imgs{
+    width:100%;
+    height:100%;
+
+    > .nike-com,
+    .nike-store,
+    .leica-photo-contest,
+    .nike-snowboarding,
+    .nike-b-access,
+    .skol-com-br,
+    .nixon-blog{
+      width:400px;
+      height:400px;
+    }
+    .rollover-imgs > .nike-com > img:nth-child(4){
+      left:-80px
+    }
+
+    .the-love-project,
+    .volcom-com,
+    .honda-com-br,
+    .volcom-brain-damage{
+      width:600px;
+      height:400px;
+    }
+
+    .honda-access{
+      width:650px;
+      height:400px;
+    }
+
+    .nike-skateboarding > img:nth-child(1){
+      width:450px;
+      height:475px;
+    }
+
+    .lebron-james-raven{
+      width:450px;
+      height:400px;
     }
   }
 }
@@ -1219,11 +1321,11 @@ ul{
       }
     }
   }
+
 }
 
 @media all and (min-width: 1680px) and (max-width: 1909px){
 
-  body{background-color:blue;}
   .project-list{
     width:720px;
     padding-top:55px;
@@ -1254,7 +1356,6 @@ ul{
 }
 
 @media all and (min-width: 1910px){
-  body{background-color:green;}
 
   .project-list{
     width:690px;
